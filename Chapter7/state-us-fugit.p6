@@ -12,7 +12,7 @@ sub this-will-take( $n ) {
 
 for 100,1000,10000 {
     my ($res,$took,$final ) = this-will-take( $_ );
-    say "Computing $res took $took from start finished at $final";
+    say "Computing $res took $took, finished at $final";
 }
 
 
