@@ -7,8 +7,9 @@ my @binder := @to-be-bound;
 say @binder;
 @to-be-bound[1] = 'þ';
 say @binder;
-
+@binder[1] = 'p';
+say @to-be-bound;
 =output
 [a b c]
 [a þ c]
-
+[a p c]
