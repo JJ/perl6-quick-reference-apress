@@ -17,3 +17,6 @@ for 100,1000,10000 {
     say "Computing $res took $took from start finished at $final";
 }
 say "Everything took ", now - $us-fugit;
+
+=output
+/^^Everything \s /

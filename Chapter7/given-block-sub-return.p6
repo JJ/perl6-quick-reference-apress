@@ -14,4 +14,4 @@ sub cmp-to-s( $lhs, $rhs ) {
 say cmp-to-s(Ⅿ, 1001) eq "S" ?? "Yes" !! "No";
 
 =output
-Yes
+No
