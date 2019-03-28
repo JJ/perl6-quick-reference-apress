@@ -2,7 +2,7 @@
 
 use v6;
 
-sub deck( @cards, *@numbers ) {
+sub deck( @cards, *@numbers --> Seq ) {
     return @numbers X~ @cards;
 }
 
