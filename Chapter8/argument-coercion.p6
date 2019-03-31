@@ -12,7 +12,7 @@ say deck( $palos, how-many => 4, cards => (1,3,5) );
 
 
 =output
-(1❖❖bastos 1❖❖espadas 3❖❖bastos 3❖❖espadas)
+/"❖❖"/
 
 
 
