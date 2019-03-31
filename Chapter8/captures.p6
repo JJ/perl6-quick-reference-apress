@@ -12,7 +12,7 @@ say deck( |$capture );
 
 
 =output
-(Sota❖❖bastos Sota❖❖espadas Caballo❖❖bastos)
+(Sota❖❖Bastos Sota❖❖Espadas Caballo❖❖Bastos)
 
 
 

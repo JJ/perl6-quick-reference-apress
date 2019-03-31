@@ -14,5 +14,5 @@ say deck( :@suits, :@cards );
 
 =output
 (1bastos 1espadas 3bastos 3espadas)
-(Ace♥ Ace♣)
+(Ace♥ Ace♣ Ace♠ Ace♦)
 
