@@ -2,7 +2,7 @@
 
 use v6;
 
-subset CardNumber of Int where * <= 10;
+subset CardNumber of Int where 0 < * <= 10;
 
 sub card( CardNumber $card-number, $suit ) {
     return "$card-number de $suit";
