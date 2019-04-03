@@ -2,7 +2,7 @@
 
 use v6;
 
-my $card-printer = :(Int,Str);
+my $card-printer = :(Int $foo, Str $bar);
 
 sub print-card( Int $card-number,
                 Str $suit,
@@ -18,7 +18,7 @@ say print-card( 9, "Espadas", &printer:<♦>);
 
 =output
 2 de Bastos
-9 de Espadas
+9 ♦ Espadas
 
 
 
