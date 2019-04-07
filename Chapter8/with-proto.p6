@@ -2,7 +2,7 @@
 
 use v6;
 
-proto stringify-card( | ) {*}
+proto stringify-card( Str, Int $? ) {*}
 multi stringify-card( Str $p ) { "▶ $p" }
 multi stringify-card( $p where (* ~~ any <Bastos Copas Oros Espadas>),
                       Int $n ) { samewith "$n de $p" }
