@@ -2,7 +2,7 @@
 
 use v6;
 
-role Card-values {
+class Card-values {
     has @.values;
     method one { @!values.pick };
     method better-than ( $lhs, $rhs ) {

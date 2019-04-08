@@ -10,14 +10,16 @@ role Card-values {
     };
 }
 
+class Named-card-values does Card-values { has Str $.name };
+
 my @values = (2..10);
 @values = @values.append( <J Q K Ace> );
-my $french-values = Card-values.new( :@values );
+my $french-values = Named-card-values.new( :@values, name => 'French' );
 say $french-values.perl;
 say $french-values.better-than( "Ace", 3 );
 
 =output
-Card-values.new(values => [2, 3, 4, 5, 6, 7, 8, 9, 10, "J", "Q", "K", "Ace"])
+Named-card-values.new(values => [2, 3, 4, 5, 6, 7, 8, 9, 10, "J", "Q", "K", "Ace"])
 True
 
 
