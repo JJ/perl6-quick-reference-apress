@@ -16,7 +16,6 @@ say qq:to/CARDS/;
 CARDS
 
 =output
-♦	10
-♥	6
-♠	2
-♣	4
+/"♦" \s+ \d+/
+
+
