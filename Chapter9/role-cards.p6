@@ -17,7 +17,7 @@ say $french-values.perl;
 say $french-values.better-than( "Ace", 3 );
 
 =output
-Card-values.new(values => [ 2, 3, 4, 5, 6, 7, 8, 9, 10, "J", "Q", "K", "Ace"])
+Card-values.new(values => [2, 3, 4, 5, 6, 7, 8, 9, 10, "J", "Q", "K", "Ace"])
 True
 
 
