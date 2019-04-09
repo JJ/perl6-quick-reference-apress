@@ -6,7 +6,7 @@ class Card {
     has $.value;
     has $.suit;
 
-    method show() { "$!value of $!suit" }
+    method show() { "{self.value} of $!suit" }
 }
 
 
