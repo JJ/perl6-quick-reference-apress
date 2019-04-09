@@ -13,3 +13,7 @@ class Card {
 my Card $deuce = Card.new( value => 2, suit => '♥' );
 say $deuce.perl;
 say $deuce.show;
+
+=output
+Card.new(value => 2, suit => "♥")
+2 of ♥
