@@ -37,3 +37,4 @@ say Card.new( 0, "Joker" ).better-than( $deuce );
 =output
 True
 False
+True

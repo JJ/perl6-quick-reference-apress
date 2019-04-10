@@ -38,5 +38,10 @@ say $deuce.better-than: Card.new( 1, '♥' );
 say $deuce;
 
 =output
-Card.new
-2 of ♥
+♥ => 2
+2 of ♥  won 0 times
+True
+False
+True
+2 of ♥  won 1 times
+
