@@ -21,4 +21,4 @@ say $other-card;
 =output
 Card.new
 2 of ♥
-Card.new
+3 of Bastos
