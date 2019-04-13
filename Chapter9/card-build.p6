@@ -10,11 +10,11 @@ class Card {
 	return self.bless( :$value, :$suit );
     }
     submethod BUILD( :$!value, :$!suit ) {}
-    method show() { "$!value of $!suit" }
+    method gist() { "$!value of $!suit" }
 }
 my Card $deuce = Card.new( 2, '♥' );
 say $deuce.perl;
-say $deuce.show;
+say $deuce;
 my Card $other-card = Card.new( value => 3, suit => "Bastos");
 say $other-card;
 
