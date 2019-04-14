@@ -10,4 +10,4 @@ my $card is fixable = (1 => '♥');
 my $other-card is fixable(False) = 7;
 
 =output
-/Fixing with/
+/Fixing \s+ with/
