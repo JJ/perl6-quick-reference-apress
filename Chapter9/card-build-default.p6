@@ -11,8 +11,6 @@ class Card {
 	return self.bless( :$value, :$suit );
     }
     submethod BUILD( :$!value, :$!suit ) {}
-    method Pair() { $!suit => $!value };
-
     method better-than( Card $c ) {
 	if $c.suit eq $!suit {
 	    if $!value > $c.value {
@@ -29,7 +27,6 @@ class Card {
 }
 
 my Card $deuce = Card.new( 2, '♥' );
-say $deuce.Pair;
 say $deuce;
 
 say Card.new( 3, '♥' ).better-than( $deuce );
@@ -38,7 +35,6 @@ say $deuce.better-than: Card.new( 1, '♥' );
 say $deuce;
 
 =output
-♥ => 2
 2 of ♥  won 0 times
 True
 False
