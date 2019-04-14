@@ -2,4 +2,4 @@
 
 use v6;
 
-use IO::Path;
+use Test;
