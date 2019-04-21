@@ -25,21 +25,15 @@ class Brisca is Game {
 
 class Guiñote is Game {
     has Int $.diez-de-últimas;
-    method !score-card( $c ) {
-        my %scores = { As => 11,
-                         3 => 10,
-                         Rey => 4,
-                         Caballo => 2,
-                         Sota => 3 };
-        
-        if $c ~~ any %!scores.keys {
-            return %scores{$c}
-        }
+    
+    method !_score-card( $c ) {
+        my %scores = :11As, 3 => 10, :4Rey, :2Caballo, :3Sota;
+        return %scores{$c} if $c ~~ any %scores.keys 
     }
     
     method score( @deck ) {
         my $score = $!diez-de-últimas;
-        $score += score-card($_) for @deck;
+        $score += self!_score-card($_) for @deck;
         return $score;
     }
 }
