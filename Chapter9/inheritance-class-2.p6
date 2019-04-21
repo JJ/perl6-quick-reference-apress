@@ -46,5 +46,5 @@ $game = Guiñote.new( name => 'Este guiñote', :0diez-de-últimas );
 say $game.score( @deck );
 
 =output
+27
 28
-37

@@ -14,4 +14,5 @@ say stringify-card( "♣", 5 );
 say stringify-card( "♥", "Ace" );
 
 =output
-/^"♣ 5"/
+5 ♣
+Ace of ♥

@@ -7,4 +7,4 @@ use Test;
 ok(1);
 
 =output
-ok 1 -
+/\w/

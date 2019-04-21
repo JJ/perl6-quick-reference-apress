@@ -49,5 +49,5 @@ say $game1.score( @deck );
 say $game2.score( @deck );
 
 =output
+27
 28
-37
