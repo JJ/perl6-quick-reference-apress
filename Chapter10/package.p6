@@ -11,4 +11,4 @@ my &Moves::shuffle = -> *@deck {
 say Moves::shuffle( "As de bastos", "3 de oros", "Sota de espadas" );
 
 =output
-^^"("
+/^^"("/
