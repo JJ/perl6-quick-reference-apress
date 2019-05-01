@@ -4,8 +4,7 @@ use v6;
 
 use Test;
 
-say "Hi";
-ok(1);
+ok 1, "Internal test";
 
 =output
 Hi
