@@ -1,5 +1,7 @@
 #!/usr/bin/env perl6
 
+use lib <. Chapter10>;
+
 use Draw-Two;
 
 my @shuffled-deck = gather {
@@ -11,4 +13,4 @@ my @shuffled-deck = gather {
 say @shuffled-deck;
 
 =output
-/^^"(("/
+/^^"["/

@@ -7,5 +7,8 @@ Every chapter corresponds to a folder.
 For the time being, these are the chapters that are being used:
 
 * [Chapter 7](Chapter7/)
+* [Chapter 8](Chapter8/)
+* [Chapter 9](Chapter9/)
+* [Chapter 10](Chapter10/) (WIP)
 
 
