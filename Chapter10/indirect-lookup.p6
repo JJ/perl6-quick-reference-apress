@@ -10,7 +10,7 @@ sub shuffle( *@deck ) {
     @deck.pick( * );
 }
 
-my $shuffle = Bool.pick?? "suffle" !! "shuffle-pro";
+my $shuffle = Bool.pick?? "shuffle" !! "shuffle-pro";
 
 say &::($shuffle)( "As de bastos", "3 de oros", "Sota de espadas" );
 
