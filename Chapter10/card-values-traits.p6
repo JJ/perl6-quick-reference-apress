@@ -1,6 +1,6 @@
 class Card-Values {
 
-    has @.values is rw;
+    has @.values is rw is required;
     has $.pintan is rw is default("Bastos") = "Espadas";
     method one() is DEPRECATED { @!values.pick ~ $!pintan } ;
     method draw( $cards = 1 ) { (@!values.pick: $cards ) X~ $!pintan };
