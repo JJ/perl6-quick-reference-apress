@@ -1,4 +1,4 @@
-unit class Card-values;
+unit class Card-Values;
 
 has @.values;
 method one { @!values.pick };
