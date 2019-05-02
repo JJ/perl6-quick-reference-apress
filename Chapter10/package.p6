@@ -2,13 +2,15 @@
 
 use v6;
 
-
-my &Moves::shuffle = -> *@deck {
-    @deck.pick: *;
+package Moves {
+    sub shuffle( *@deck ) is export {
+        @deck.pick: *;
+    }
 }
 
 
-say Moves::shuffle( "As de bastos", "3 de oros", "Sota de espadas" );
+import Moves;
+say shuffle( "As de bastos", "3 de oros", "Sota de espadas" );
 
 =output
-/^^"("/
+/^^"("\w+/
