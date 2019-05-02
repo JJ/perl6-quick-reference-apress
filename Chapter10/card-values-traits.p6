@@ -15,4 +15,4 @@ say $cards.draw( 2 );
 
 
 =output
-/"deprecated code"/
+/"Bastos"/
