@@ -2,7 +2,7 @@
 
 use v6;
 
-use lib <.>;
+use lib <. Chapter10>;
 
 require draw-two-cu <&draw-two>;
 
