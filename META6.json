@@ -10,6 +10,6 @@
   "tags" : [
     "book"
   ],
-  "test-depends" : [ ],
+  "depends" : [ "JSON::Fast" ],
   "version" : "0.0.1"
 }
