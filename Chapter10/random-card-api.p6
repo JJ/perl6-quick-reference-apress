@@ -10,4 +10,4 @@ say   jget URL ~ "/$deck-id/draw/?count=2";
 
 
 =output
-/^^"{cards/
+/cards/
