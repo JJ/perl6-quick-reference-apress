@@ -1,6 +1,6 @@
 unit module Draw-Two;
 
-our sub draw-two( --> Slip ) {
+our sub draw-two( --> Slip ) is export {
     state @deck = 1..10 X~ <♠ ♦ ♣ ♥>;
     if @deck {
         my @shuffle = @deck.pick: *;
