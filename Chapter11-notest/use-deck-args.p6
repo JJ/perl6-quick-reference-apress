@@ -7,6 +7,6 @@ use Deck;
 
 my Deck $this-deck .= new;
 
-my UInt $how-many = @*ARGS[0] // 1;
+my UInt $how-many = (@*ARGS[0] // 1).UInt;
 say "Cards ", $this-deck.draw( $how-many ).join(" ❦ ");
 
