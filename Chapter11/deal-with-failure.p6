@@ -9,8 +9,6 @@ my Decker $this-deck .= new;
 
 my $draw = $this-deck.draw: (@*ARGS[0] // 1).UInt;
 
-say $draw.defined;
-
 if $draw.defined == False {
     say "Oops, something went wrong →\n\t", $draw.exception;
 } else {
