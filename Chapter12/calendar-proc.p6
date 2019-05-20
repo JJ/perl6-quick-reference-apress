@@ -2,7 +2,7 @@
 
 use v6;
 
-my $cal = run "/usr/bin/cal", "1965", :out;
+my $cal = run "cal", "1965", :out;
 
 say "The whole calendar for 1965\n\n", $cal.out.lines().join("\n\t");
 
