@@ -5,7 +5,7 @@ use v6;
 if $*ARGFILES.path ~~ IO::Special {
     say "No input"
 } else {
-    .lines.elems.say for $*ARGFILES
+    $*ARGFILES.lines.elems.say
 }
 
 =output
