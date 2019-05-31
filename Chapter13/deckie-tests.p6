@@ -8,7 +8,6 @@ use Test;
 
 use Deckie;
 
-
 my $deck = Deckie.new;
 
 for 1..($deck.cards.elems/2) {
