@@ -20,6 +20,5 @@ throws-like { $deck.draw( 2 ) }, X::Cards::NoMore, "No more cards" ;
 done-testing;
 
 =output
-1..1
-ok 1 - Can use library
+/ok/
 
