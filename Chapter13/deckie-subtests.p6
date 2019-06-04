@@ -17,7 +17,7 @@ for 1..($deck.cards.elems/2) {
     subtest {
 	is( $draw.elems, 2, "Correct number of elems" );
 	cmp-ok( +$draw.comb[0], ">", 0, "Figure OK");
-    }
+    }, "Testing card hand"
 }
 
 =output
