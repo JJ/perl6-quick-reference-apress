@@ -9,15 +9,11 @@ use Test;
 use Deckie;
 
 plan 20;
-
 my $deck = Deckie.new;
-
 for 1..($deck.cards.elems/2) {
-    my $draw = $deck.draw( 2 );
-    subtest {
-	is( $draw.elems, 2, "Correct number of elems" );
-	cmp-ok( +$draw.comb[0], ">", 0, "Figure OK");
-    }, "Testing card hand"
+    given $deck.draw( 2 ) {
+	isnt( @_[0], @_[1], "Cards from pair are different");
+    }
 }
 
 =output
