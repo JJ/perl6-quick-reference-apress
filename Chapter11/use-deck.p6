@@ -12,4 +12,4 @@ say "Three cards ", $this-deck.draw( 3 ).join(" ❦ ");
 
 
 =output
-/^^One card/
+/^^"One"/

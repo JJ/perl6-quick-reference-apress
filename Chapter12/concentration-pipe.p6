@@ -6,5 +6,5 @@ my $concentration = shell "concentration", :in;
 $concentration.in.put("1,1 2,2");
 
 =output
-/"row-1,column-1"/
+
 

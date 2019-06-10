@@ -11,6 +11,4 @@ plan 1;
 use-ok( "Deckie", "Can use library");
 
 =output
-1..1
-ok 1 - Can use library
-
+/ok/

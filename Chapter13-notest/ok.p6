@@ -8,5 +8,3 @@ sub returns-forty-two( --> 42 ) {};
 
 is( returns-forty-two, 42, "Returns 42");
 
-=output
-ok 1 - Returns 42
