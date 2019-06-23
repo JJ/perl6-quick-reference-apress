@@ -4,9 +4,9 @@ use v6;
 
 
 my $match = "foostatic" ~~ m/sta/;
-say $match.pos;
+say "From {$match.from} to {$match.to}";
+say "Before {$match.prematch} and after {$match.postmatch}";
 
 =output
-Match.new(pos => 3, made => Any, from => 0, hash => Map.new(()), orig => "foo", list => ())
-Bool::False
-Bool::False
+From 3 to 6
+Before foo and after tic
