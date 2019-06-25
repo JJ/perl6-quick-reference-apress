@@ -3,14 +3,18 @@
 use v6;
 
 
-my $numbers =  "10 ♥" ~~ m/ (..?) " "  ("♥" | "♠" | "♣" | "♦")  /;
-say $numbers;
-.say for $numbers.list;
+my $card =  "10 ♥" ~~ m/ (..?) " "  ("♥" | "♠" | "♣" | "♦")  /;
+say $card;
+.say for $card.list;
+say $0;
+say $/[0];
 =output
 ｢10 ♥｣
  0 => ｢10｣
  1 => ｢♥｣
 ｢10｣
 ｢♥｣
+｢10｣
+｢10｣
 
 
