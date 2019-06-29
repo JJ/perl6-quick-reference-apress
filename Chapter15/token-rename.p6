@@ -5,6 +5,7 @@ use v6;
 my token any-letter { <alpha>+ }
 
 say "foo,bar" ~~ m/<first=any-letter><punct><second=any-letter>/;
+$<second>.say;
 
 =output
 ｢foo,bar｣
@@ -25,12 +26,7 @@ say "foo,bar" ~~ m/<first=any-letter><punct><second=any-letter>/;
   alpha => ｢b｣
   alpha => ｢a｣
   alpha => ｢r｣
-
-
-
-
-
-
-
-
-
+｢bar｣
+ alpha => ｢b｣
+ alpha => ｢a｣
+ alpha => ｢r｣
