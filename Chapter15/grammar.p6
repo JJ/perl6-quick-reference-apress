@@ -12,3 +12,17 @@ grammar Game {
 say Game.parse( "Alice plays K♠");
 
 =output
+｢Alice plays K♠｣
+ player => ｢Alice｣
+  upper => ｢A｣
+  alpha => ｢l｣
+  alpha => ｢i｣
+  alpha => ｢c｣
+  alpha => ｢e｣
+ action => ｢plays｣
+  alpha => ｢p｣
+  alpha => ｢l｣
+  alpha => ｢a｣
+  alpha => ｢y｣
+  alpha => ｢s｣
+ card => ｢K♠｣
