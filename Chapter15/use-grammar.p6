@@ -8,3 +8,6 @@ use Game;
 
 my $game-desc1 = "Alice plays 7♥,Bob plays 8♠";
 say Game.parse( $game-desc1, :args(( ",",)) );
+$game-desc1 ~~ s/","/|/;
+say Game.parse( $game-desc1, :args(( "|",)) );
+
