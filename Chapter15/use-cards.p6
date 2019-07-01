@@ -4,10 +4,9 @@ use v6;
 use lib <. Chapter15>;
 
 
-use Game;
+use Cards;
 
-my $game-desc1 = "Alice plays 7♥,Bob draws 8♠,Cara wins A♦";
-my $match = Game.parse( $game-desc1, :args(( ",",)) );
+my $match = Cards.parse( "Alice plays 7♥,Bob draws 8♠,Cara wins A♦" );
 
 for $match<hand> -> $h {
     say "Action→ $h<action>";
