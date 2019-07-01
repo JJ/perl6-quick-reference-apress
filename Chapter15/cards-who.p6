@@ -8,7 +8,7 @@ use Cards;
 use Cards-Who;
 
 my $to-parse = "Alice plays 7♥,Bob draws 8♠,Cara wins A♦";
-my $match = Cards.parse( $to-parse, actions => Cards-Who.new );
+my $match = Cards.parse( $to-parse, actions => Cards-Who );
 
 say $match.made;
 
