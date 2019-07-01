@@ -9,8 +9,8 @@ use Game;
 my $game-desc1 = "Alice plays 7♥,Bob draws 8♠,Cara wins A♦";
 my $match = Game.parse( $game-desc1, :args(( ",",)) );
 
-for $match<hand>.list -> $hand {
-    say "Action→ $hand<action>";
+for $match<hand> -> $h {
+    say "Action→ $h<action>";
 }
 
 =output
